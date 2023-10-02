@@ -66,8 +66,8 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
          image: hocinemab/springbootng
-         registry: hub.docker.com
-         username: ${{ secrets.DOCKERHUB_PASSWORD }}
-         password: ${{ secrets.DOCKERHUB_USERNAME }}
+         registry: docker.io
+         username: hocinemab
+         password: Allahoakbar1982/
         
 
