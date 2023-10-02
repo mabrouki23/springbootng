@@ -80,7 +80,7 @@
           <nodeVersion>v18.18.0</nodeVersion>
           <npmVersion>9.8.1</npmVersion>
           <nodeDownloadRoot>https://nodejs.org/dist/</nodeDownloadRoot>
-          <workingDirectory>frontend</workingDirectory>
+          <workingDirectory>./</workingDirectory>
         </configuration>
         <executions>
           <execution>
