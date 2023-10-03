@@ -71,5 +71,6 @@ jobs:
          registry: docker.io
          username: hocinemab
          password: Allahoakbar1982/
-        
+    - name: show directory    
+      run:  dir staging   
 
