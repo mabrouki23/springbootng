@@ -56,21 +56,14 @@ jobs:
     - name: Build with Maven    
       run: |
            mvn -B -DskipTests package --file pom.xml
-           mkdir staging && cp .\target\*.jar staging
-           dir ./target  
+           mkdir target && cp .\target\*.jar target
+           dir target  
     
     - name: register workflow data as artifact
       uses: actions/upload-artifact@v2
       with: 
          name: github-actions-artifact
          path: staging
-    - uses: actions/checkout@v3
-
-    
-    
-   
-     
-      
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
          image: hocinemab/springbootng
