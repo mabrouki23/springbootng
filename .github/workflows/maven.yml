@@ -57,8 +57,7 @@ jobs:
       run: |
            mvn -B -DskipTests package --file pom.xml
            mkdir staging && cp .\target\*.jar staging
-           dir    
-           working-directory: ./target  
+           dir ./target  
     
     - name: register workflow data as artifact
       uses: actions/upload-artifact@v2
