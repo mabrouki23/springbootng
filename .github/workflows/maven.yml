@@ -56,7 +56,7 @@ jobs:
     - name: Build with Maven    
       run: |
            mvn -B -DskipTests package --file pom.xml
-           mkdir target && cp .\target\*.jar target
+           mkdir staging && cp .\target\*.jar staging
            dir target  
     
     - name: register workflow data as artifact
