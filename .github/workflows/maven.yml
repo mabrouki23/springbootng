@@ -57,6 +57,8 @@ jobs:
       run: |
            mvn -B -DskipTests package --file pom.xml
            mkdir staging && cp .\target\*.jar staging
+           dir    
+           working-directory: ./target  
     
     - name: register workflow data as artifact
       uses: actions/upload-artifact@v2
@@ -67,9 +69,8 @@ jobs:
 
     
     
-    - name: Display structure of downloaded files
-      run: dir    
-      working-directory: ./target  
+   
+     
       
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
