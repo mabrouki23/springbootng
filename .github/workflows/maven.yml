@@ -66,6 +66,7 @@ jobs:
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
          image: hocinemab/springbootng
+         tags: v1, latest
          registry: docker.io
          username: hocinemab
          password: Allahoakbar1982/
