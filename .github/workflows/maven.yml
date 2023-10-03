@@ -68,7 +68,7 @@ jobs:
     
     
     - name: Display structure of downloaded files
-      run: ls -R      
+      run: ls -a     
       working-directory: ./  
       
     - uses: mr-smithers-excellent/docker-build-push@v6
