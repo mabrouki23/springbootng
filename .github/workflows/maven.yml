@@ -69,7 +69,7 @@ jobs:
     
     - name: Display structure of downloaded files
       run: dir    
-      working-directory: ./  
+      working-directory: ./target  
       
     - uses: mr-smithers-excellent/docker-build-push@v6
       with:
